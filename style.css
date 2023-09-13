@@ -1,0 +1,182 @@
+/* ---------- basic css start----------  */
+* {
+    padding: 0;
+    margin: 0;
+    outline: none;
+    text-decoration: none;
+    box-sizing: border-box;
+    font-family: Arial;
+}
+
+a {
+    display: inline-block;
+}
+
+body {
+    background: #F0F2F5;
+}
+
+.container {
+    width: 1010px;
+    margin: 0 auto;
+}
+
+/* ---------- basic css end----------  */
+/* ---------- main div css start----------  */
+.fb_login {
+    padding-top: 136px;
+    padding-bottom: 200px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: 25px;
+}
+
+/* ---------- main div css end----------  */
+/* ---------- left side text css start----------  */
+.fb_login .fb_login_text h1 {
+    font-size: 58px;
+    margin-top: 72px;
+    color: #1877F2;
+    font-weight: 700;
+    margin-bottom: 10px;
+}
+
+.fb_login .fb_login_text p {
+    font-size: 28px;
+    color: #1C1E21;
+    font-weight: 400;
+}
+
+/* ---------- left side text css end----------  */
+/* ---------- right side text css start----------  */
+form {
+    margin: 0 auto;
+    background: #fff;
+    width: 400px;
+    padding: 20px 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, .1), 0 8px 16px rgba(0, 0, 0, .1);
+}
+
+form h1 {
+    text-transform: lowercase;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+input {
+    width: 300px;
+}
+
+input[type="text"],
+input[type="password"] {
+    display: block;
+    border: 1px solid #2222;
+    padding: 14px 40px;
+    width: 100%;
+    margin: auto;
+    border-radius: 5px;
+    color: #000;
+    text-align: center;
+    font-size: 16px;
+}
+
+button {
+    border: none;
+    display: block;
+    padding: 10px;
+    text-align: center;
+    margin: auto;
+    width: 360px;
+    height: 52px;
+    padding: 12px;
+    background: #1877F2;
+    font-size: 20px;
+    color: #fff;
+    font-weight: 700;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.f_pass {
+    margin-top: 21px;
+    display: block;
+    text-align: center;
+    font-size: 14px;
+    color: #1877F2;
+}
+
+.f_pass:hover {
+    text-decoration: underline;
+}
+
+.line {
+    margin-top: 25px;
+    padding: 0 2px;
+    width: 100%;
+    height: 1px;
+    background: #DADDE1;
+}
+
+.button_2 {
+    margin-top: 25px;
+    width: 196px;
+    height: 48px;
+    font-size: 16px;
+    line-height: 17px;
+    background: #36A420;
+    cursor: pointer;
+    transition: all linear .2s;
+}
+.button_2:hover{
+    background: #2ba114;
+}
+.bottom_text h4 {
+    margin-top: 28px;
+    text-align: center;
+    font-size: 14px;
+    color: #1C1E21;
+    font-weight: 100;
+}
+
+.bottom_text a {
+    color: #1C1E21;
+    font-weight: 600;
+}
+.bottom_text a:hover,
+.bottom_text h4:hover {
+    text-decoration: underline;
+}
+
+/* ---------- right side text css end----------  */
+
+/* ---------- responsive css start----------  */
+@media only screen and (max-width: 991px) {
+    .container {
+        width: 100%;
+        margin: 0 auto;
+        padding: 0px 10px;
+    }
+
+    .fb_login {
+        padding-top: 10px;
+        padding-bottom: 30px;
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        row-gap: 40px;
+    }
+
+    .fb_login .fb_login_text h1 {
+        font-size: 50px;
+        text-align: center;
+    }
+
+    .fb_login .fb_login_text p {
+        font-size: 28px;
+        color: #1C1E21;
+        font-weight: 400;
+        text-align: center;
+    }
+}
+
+/* ---------- responsive css end----------  */
